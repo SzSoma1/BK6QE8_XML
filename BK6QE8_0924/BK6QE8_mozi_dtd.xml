@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mozi SYSTEM "BK6QE8_mozi.dtd">
+<mozi>
+  <film id="f1" mufaj="sci-fi">
+    <rendezo id="r1">alex</rendezo>
+    <szinesz id="s1">Madison_Ivy</szinesz>
+    <iro id="i1"></iro>
+  </film>
+</mozi>
