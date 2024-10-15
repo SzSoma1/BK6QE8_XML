@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BK6QE8_kurzusfelvetel tanév="2024/25" egyetem="Miskolci Egyetem">
+    <hallgato>
+        <hallgato hnev="Sziráczki Soma" szulev="1999" szak="Programtervező" evf="2024/25"/>
+        <hallgato hnev="Kiss István" szulev="2001" szak="Programtervező" evf="2024/25"/>
+    </hallgato>
+    <kurzusok>
+        <kurzus id="NEPTUN001" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>IT épület, 103-as terem</hely>
+            <idopont>Hétfő 12:00-14:00</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+            <oraado>Dr. Bednarik László</oraado>
+        </kurzus>
+        <kurzus id="NEPTUN002" jovahagyas="nem" nyelv="angol">
+            <kurzusnev>Vállalati</kurzusnev>
+            <kredit>5</kredit>
+            <hely>IT épület, 103-es terem</hely>
+            <idopont>Szerda 14:00-16:00</idopont>
+            <oktato>Dr. Sasvári Péter</oktato>
+            <oraado>Dr. Sasvári Péter</oraado>
+        </kurzus>
+        <kurzus id="NEPTUN003" jovahagyas="nem" nyelv="angol">
+            <kurzusnev>Mesterséges intelligencia alapok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>X. Előadó</hely>
+            <idopont>Szerda 10:00-12:00</idopont>
+            <oktato>Fazekas Levente</oktato>
+        </kurzus>
+    </kurzusok>
+</BK6QE8_kurzusfelvetel>
