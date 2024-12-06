@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Orarend - BK6QE8</title>
+    <script>
+
+        const orarendData = {
+            "BK6QE8": "Sziráczki Soma",
+            "ev": "2024",
+            "orarend": [
+                {
+                    "targy": "Adatkezeles XML-ben",
+                    "helyszin": "Inf/103",
+                    "oktato": "Dr. Bednarik Laszlo",
+                    "szak": "MI, PTI"
+                },
+                {
+                    "targy": "Mesterseges Intelligencia Alapok",
+                    "helyszin": "E32",
+                    "oktato": "Kunne Dr. Tamas Judit",
+                    "szak": "MI, PTI"
+                }
+            ]
+        };
+
+        function displayOrarend() {
+            let output = `<h2>${orarendData.neptunkod} Orarend ${orarendData.ev}</h2>`;
+            orarendData.orarend.forEach(ora => {
+                output += `<p>Targy: ${ora.targy}</p>`;
+                output += `<p>Helyszin: ${ora.helyszin}</p>`;
+                output += `<p>Oktato: ${ora.oktato}</p>`;
+                output += `<p>Szak: ${ora.szak}</p>`;
+                output += `<hr>`;
+            });
+            document.getElementById("orarendOutput").innerHTML = output;
+        }
+    </script>
+</head>
+<body onload="displayOrarend()">
+    <div id="orarendOutput"></div>
+</body>
+</html>
