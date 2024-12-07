@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Restaurant_BK6QE8 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchema_BK6QE8.xsd">
+
+    <!--Ingredients-->
+
+    <ingredients ingredient_id="1">
+        <name>Flour</name>
+        <type>Base</type>
+        <purchasePrice>500</purchasePrice>
+        <stockQuantity>1000</stockQuantity>
+    </ingredients>
+    
+    <ingredients ingredient_id="2">
+        <name>Honey</name>
+        <type>Sweetener</type>
+        <purchasePrice>800</purchasePrice>
+        <stockQuantity>500</stockQuantity>
+    </ingredients>
+    
+    <ingredients ingredient_id="3">
+        <name>Cheese</name>
+        <type>Dairy</type>
+        <purchasePrice>400</purchasePrice>
+        <stockQuantity>300</stockQuantity>
+    </ingredients>
+    
+    <ingredients ingredient_id="4">
+        <name>Tomatoes</name>
+        <type>Vegetable</type>
+        <purchasePrice>200</purchasePrice>
+        <stockQuantity>400</stockQuantity>
+    </ingredients>
+    
+    <ingredients ingredient_id="5">
+        <name>Beef</name>
+        <type>Meat</type>
+        <purchasePrice>1500</purchasePrice>
+        <stockQuantity>200</stockQuantity>
+    </ingredients>
+
+    <ingredients ingredient_id="6">
+        <name>Salmon</name>
+        <type>Fish</type>
+        <purchasePrice>1800</purchasePrice>
+        <stockQuantity>150</stockQuantity>
+    </ingredients>  
+
+    <!--Products-->
+
+    <product product_id="1">
+        <name>Spaghetti Bolognese</name>
+        <price>2400</price>
+        <type>Pasta</type>
+        <description>Classic spaghetti with Bolognese sauce.</description>
+    </product>
+    
+    <product product_id="2">
+        <name>Greek Salad</name>
+        <price>1800</price>
+        <type>Salad</type>
+        <description>A refreshing mix of cucumbers, tomatoes, olives, and feta cheese.</description>
+    </product>
+    
+    <product product_id="3">
+        <name>Grilled Salmon</name>
+        <price>4000</price>
+        <type>American</type>
+        <description>Perfectly grilled salmon fillet with a side of sautéed tomatoes.</description>
+    </product>
+
+    <!--Made of kapcsolat-->
+
+    <made_of ingredient_id="1" product_id="1"/>
+    <made_of ingredient_id="4" product_id="1"/>
+    <made_of ingredient_id="5" product_id="1"/>
+
+    <made_of ingredient_id="4" product_id="2"/>
+    <made_of ingredient_id="3" product_id="2"/>
+
+    <made_of ingredient_id="6" product_id="3"/>
+    <made_of ingredient_id="4" product_id="3"/>
+
+    <!--Orders-->
+
+    <order order_id="1">
+        <date>2024.04.10</date>
+        <price>4800</price>
+        <item>Spaghetti Bolognese</item>
+        <item>Greek Salad</item>
+        <status>Completed</status>
+    </order>
+    
+    <order order_id="2">
+        <date>2024.05.20</date>
+        <price>1800</price>
+        <item>Greek Salad</item>
+        <status>Processing</status>
+    </order>
+    
+    <order order_id="3">
+        <date>2024.06.15</date>
+        <price>5800</price>
+        <item>Grilled Salmon</item>
+        <status>Shipping</status>
+    </order>    
+
+    <!--Order items kapcsolat-->
+
+    <ordered_items order_id="1" product_id="1">
+        <orderingDate>2024.04.10</orderingDate>
+    </ordered_items>
+
+    <ordered_items order_id="2" product_id="2">
+        <orderingDate>2024.05.20</orderingDate>
+    </ordered_items>
+
+    <ordered_items order_id="3" product_id="3">
+        <orderingDate>2024.06.15</orderingDate>
+    </ordered_items>
+
+    <!--Customers-->
+
+    <customer create_order="1" customer_id="1">
+        <name>Emma Brown</name>
+        <address>
+            <postalcode>90210</postalcode>
+            <street>Elm Street</street>
+            <houseNumber>12</houseNumber>
+            <doorNumber>4</doorNumber>
+        </address>
+        <phoneNumber>+16505556789</phoneNumber>
+        <email>emma.brown@example.com</email>
+        <regularCustomer>true</regularCustomer>
+    </customer>
+    
+    <customer create_order="2" customer_id="2">
+        <name>Liam Davis</name>
+        <address>
+            <postalcode>10001</postalcode>
+            <street>Broadway Avenue</street>
+            <houseNumber>7</houseNumber>
+            <doorNumber>1</doorNumber>
+        </address>
+        <phoneNumber>+14155552345</phoneNumber>
+        <email>liam.davis@example.com</email>
+        <regularCustomer>false</regularCustomer>
+    </customer>
+    
+    <customer create_order="3" customer_id="3">
+        <name>Olivia Taylor</name>
+        <address>
+            <postalcode>30303</postalcode>
+            <street>Peachtree Street</street>
+            <houseNumber>5</houseNumber>
+            <doorNumber>3</doorNumber>
+        </address>
+        <phoneNumber>+17705556789</phoneNumber>
+        <email>olivia.taylor@example.com</email>
+        <regularCustomer>true</regularCustomer>
+    </customer>
+
+    <!--Couriers-->
+
+    <courier courier_demand="1" courier_id="1">
+        <name>James Wilson</name>
+        <phoneNumber>+15555554321</phoneNumber>
+        <transportType>Bicycle</transportType>
+        <isActive>true</isActive>
+    </courier>
+    
+    <courier courier_demand="2" courier_id="2">
+        <name>Charlotte White</name>
+        <phoneNumber>+14445555678</phoneNumber>
+        <transportType>Car</transportType>
+        <isActive>true</isActive>
+    </courier>
+    
+    <courier courier_demand="3" courier_id="3">
+        <name>Henry Moore</name>
+        <phoneNumber>+13335556666</phoneNumber>
+        <transportType>Motorcycle</transportType>
+        <isActive>true</isActive>
+    </courier>    
+
+</Restaurant_BK6QE8>
